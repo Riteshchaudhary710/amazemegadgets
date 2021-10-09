@@ -1,0 +1,248 @@
+:root{
+    --primary-color:#2e3243;
+    --secondary-color:#c4150c;
+}
+*,::after,::before{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style:none;
+}
+@font-face {
+    font-family:"poppins";
+    src: url("../fonts/Poppins-Regular.woff");
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family:"poppins";
+    src: url("../fonts/Poppins-Medium.woff");
+    font-weight:500;
+    font-style:normal;
+}
+@font-face {
+    font-family:"poppins";
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight:700;
+    font-style:normal;
+}
+@font-face {
+    font-family: "satisfy";
+    src: url("../fonts/Satisfy-Regular.ttf");
+    font-weight: 400;
+    font-style:normal;
+}
+.wholepage{
+    overflow-x: hidden;
+    font-family:"poppins";
+}
+.amg-container{
+    max-width:1200px;
+    width:100%;
+    padding:0 15px;
+    margin:0 auto;
+}
+.col-50{
+    width:50%;
+    flex:0 0 50%;
+}
+.col-70{
+    width:70%;
+    flex:0 0 70%;
+}
+.col-30{
+    width:30%;
+    flex:0 0 30%;
+}
+.col-66{
+    width:66.66%;
+    flex:0 0 66.66%;
+}
+.col-33{
+    width:33.33%;
+    flex:0 0 33.33%;
+}
+.blog-post-meta,.logo-wrap,.menu-section,.menu ul,.row-100,.blog-row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.logo-wrap{
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+}
+.menu-wrap{
+    background-color:var(--primary-color);
+    padding:20px 0;
+}
+.menu-section{
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li{
+    margin:0 15px;
+}
+.menu ul li > a{
+    color:#fff;
+    font-size:16px;
+    font-weight: 500;
+}
+.search img{
+    width:20px;
+    height:20px;
+    filter:invert(1);
+}
+
+#herobanner{
+    padding-top:20px;
+    padding-bottom: 60px;
+}
+.hero-sub-img{
+    height:50%;
+}
+.hero-sub-img{
+   height:218px; 
+}
+:is(.hero-sub-img,.hero-img) img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+}
+.hero-img{
+    margin-right:3px;
+    height:99.4%;
+}
+.hero-1,.hero-2{
+    margin-bottom:3px;
+    margin-right:3px;
+}
+.hero-3,.hero-4{
+    margin-bottom:3px;
+}
+.hero-post,.hero-post-2,.hero-post-3,.hero-post-4,.hero-post-5{
+    position:relative;
+}
+.post-title{
+    position:absolute;
+    bottom:25px;
+    left:0;
+    padding:0 20px;
+}
+.post-title :is(h2,p){
+    color:#fff;
+}
+
+/* blog categories */
+#blog-categories{
+    padding:60px 0;
+    background-color: #f7f8f9;
+}
+.blog-row{
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+.blog-row > div{
+    flex:0 0 calc(50% - 15px);
+}
+.blog-post figure{
+    height:50%;
+}
+.blog-post figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.blog-cate-head,.follow-us-heading{
+    padding-bottom:10px;
+    border-bottom: 1px solid #eaecee;
+    margin-bottom:25px;
+    position:relative;
+    
+}
+:is(.follow-us-heading,.blog-cate-head) h2{
+    margin-left:15px;
+}
+:is(.follow-us-heading,.blog-cate-head) h2::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:35px;
+    background:var(--secondary-color);
+}
+.blog-content-wrap{
+    padding:0 15px 15px;
+}
+.blog-post-meta{
+    padding:10px 0;
+}
+.blog-post-meta :is(p,a){
+    display:flex;
+    align-items: center;
+    margin-right:25px;
+}
+.blog-post-meta :is(p,a) img{
+    margin-right:10px;
+}
+.blog-post{
+    box-shadow: 1px 1px 7px 1px #ddd;
+}
+.blog-list{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 30px;
+    box-shadow:1px 1px 7px 1px #ddd;
+}
+
+.blog-list figure{
+    flex:0 0 30%;
+    
+}
+.blog-list-title{
+    padding:0 10px;
+}
+.blog-list figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.blog-list .blog-list-title{
+    flex:0 0 70%;
+}
+.blog-list .blog-post-meta :is(p,a){
+ font-size:14px;
+ margin-right:10px;
+}
+.blog-list:last-child{
+    margin-bottom:0;
+}
+#blog-categories .row-100{
+    margin:0 -15px;
+}
+#blog-categories .row-100 > div{
+    padding:0 15px;
+}
+.follow-us-icon{
+    display:flex;
+    justify-content: space-between;
+}
+.follow-us-icon figure{
+  width:60px;
+  height:60px;
+  border-radius: 50%; 
+  background:var(--secondary-color);
+  padding:15px; 
+}
+.follow-us-icon img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    filter:invert(1)
+}
