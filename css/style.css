@@ -76,7 +76,11 @@ p{
     width:25%;
     flex:0 0 25%;
 }
-.blog-post-meta,.logo-wrap,.menu-section,.menu ul,.row-100,.blog-row{
+.col-75{
+    width:75%;
+    flex:0 0 75%;
+}
+.blog-row-all,.blog-post-meta,.logo-wrap,.menu-section,.menu ul,.row-100,.blog-row{
     display:flex;
     flex-wrap:wrap;
 }
@@ -108,7 +112,7 @@ p{
 
 #herobanner{
     padding-top:20px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 .hero-sub-img{
     height:50%;
@@ -158,10 +162,10 @@ p{
     margin-bottom:30px;
 }
 .blog-row > div{
-    flex:0 0 calc(50% - 15px);
+    flex:0 0 calc(50% - 20px);
 }
 .blog-post figure{
-    height:220px;
+    height:185px;
 }
 .blog-post figure img{
     width:100%;
@@ -201,14 +205,14 @@ p{
 .blog-post-meta :is(p,a) img{
     margin-right:10px;
 }
-.blog-post{
+/* .blog-post{
     box-shadow: 1px 1px 7px 1px #ddd;
-}
+} */
 .blog-list{
     display:flex;
     flex-wrap:wrap;
     margin-bottom: 30px;
-    box-shadow:1px 1px 7px 1px #ddd;
+    /* box-shadow:1px 1px 7px 1px #ddd; */
 }
 
 .blog-list figure{
@@ -239,7 +243,35 @@ p{
 #blog-categories .row-100 > div{
     padding:0 15px;
 }
+.blog-list-title a{
+    font-weight:500;
+    font-size:16px;
+}
+.blog-post-meta a {
+    font-weight: 400;
+}
+.blog-cate{
+    padding-bottom:50px;
+}
+/*blog-all*/
+.blog-all-image{
+    width:200px;
+    height:150px;
+
+}
+.blog-all-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.blog-all{
+    margin-bottom: 30px;
+}
 /* follow us */
+.sidebar-wrap{
+    position:sticky;
+    top:-200px;
+}
 .follow-us{
     margin-bottom:50px;
 }
