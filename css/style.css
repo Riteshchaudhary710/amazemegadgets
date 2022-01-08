@@ -92,14 +92,14 @@ p{
 }
 .menu-wrap{
     background-color:var(--primary-color);
-    padding:20px 0;
+    padding:5px 0;
 }
 .menu-section{
     justify-content: space-between;
     align-items: center;
 }
 .menu ul li{
-    margin:0 15px;
+    margin:0 10px;
 }
 .menu ul li > a{
     color:#fff;
@@ -114,6 +114,10 @@ p{
     padding-top:20px;
     /* padding-bottom: 60px; */
 }
+#herobanner .row-100{
+    height:390px;
+}
+
 .hero-sub-img{
     height:50%;
 }
@@ -128,7 +132,7 @@ p{
 }
 .hero-img{
     margin-right:3px;
-    height:85%;
+    height:60%;
 }
 .hero-1,.hero-2{
     margin-bottom:3px;
@@ -142,7 +146,7 @@ p{
 }
 .post-title{
     position:absolute;
-    bottom:75px;
+    bottom:185px;
     left:0;
     padding:0 20px;
 }
@@ -152,10 +156,16 @@ p{
 :is(.hero-post-3,.hero-post-2,.hero-post-4,.hero-post-5) .post-title{
   bottom:8px;
 }
+.ads figure img{
+    display:block;
+}
 /* blog categories */
 #blog-categories{
-    padding:60px 0;
+    padding:20px 0 60px;
     background-color: #f7f8f9;
+}
+#blog-categories a{
+    color:#000;
 }
 .blog-row{
     justify-content: space-between;
@@ -251,14 +261,14 @@ p{
     flex: 0 0 calc(70% - 30px);
 }
 .blog-list-title a{
-    font-weight:500;
-    font-size:16px;
+    font-weight:600;
+    font-size:15px;
 }
 .blog-post-meta a {
     font-weight: 400;
 }
 .blog-cate{
-    padding-bottom:50px;
+    padding-bottom:30px;
 }
 /*blog-all*/
 .blog-all-image{
@@ -336,6 +346,13 @@ p{
        background:var(--primary-color);
        padding:40px 0  0  0; 
    }
+   #main-footer .row-100{
+       margin:0 -15px;
+
+   }
+   #main-footer .row-100 > div{
+       padding:0 15px;
+   }
    #main-footer h2{
        color:#fff;
        font-weight: 500;
@@ -363,8 +380,8 @@ p{
 
 
  .searchbox-icon img{
-     width:25px;
-     height:25px;
+     width:20px;
+     height:20px;
      filter:invert(1)
      
  }
@@ -373,7 +390,7 @@ p{
     position:relative;
     min-width:50px;
     width:0%;
-    height:42px;
+    /* height:42px; */
     float:right;
     overflow:hidden;
     
@@ -391,9 +408,9 @@ p{
     outline:0;
     background:#dcddd8;
     width:100%;
-    height:50px;
+    height:35px;
     margin:0;
-    padding:0px 55px 7px 20px;
+    padding:0px 55px 0px 20px;
     font-size:20px;
     color:red;
 }
