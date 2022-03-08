@@ -1,6 +1,6 @@
 :root{
     --primary-color:#2e3243;
-    --secondary-color:#c4150c;
+    --secondary-color:green;
 }
 *,::after,::before{
     margin:0;
